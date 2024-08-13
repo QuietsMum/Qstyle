@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <TextView
+        android:id="@+id/txtVw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now Playing: "
+        android:layout_marginTop="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/txtSname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtVw1"
+        android:layout_toRightOf="@+id/txtVw1"
+        android:text="TextView" />
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@+id/txtVw1"
+        android:src="@drawable/prodigy" />
+    <ImageButton
+        android:id="@+id/btnBackward"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="50dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_backword" />
+    <ImageButton
+        android:id="@+id/btnPlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btnBackward"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btnBackward"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_play"
+        android:tint="@color/colorPrimary"/>
+    <ImageButton
+        android:id="@+id/btnPause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btnPlay"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btnPlay"
+        android:background="@color/white"
+        android:tint="@color/colorPrimary"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_pause" />
+    <ImageButton
+        android:id="@+id/btnForward"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btnPause"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btnPause"
+        android:tint="@color/colorPrimary"
+        android:scaleType="centerCrop"
+        android:background="@color/white"
+        android:contentDescription="@+id/imageButton3"
+        android:src="@drawable/ic_forward" />
+    <TextView
+        android:id="@+id/txtStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sBar"
+        android:text="0:0" />
+    <SeekBar
+        android:id="@+id/sBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBackward"
+        android:layout_toLeftOf="@+id/txtSongTime"
+        android:layout_toRightOf="@+id/txtStartTime" />
+    <TextView
+        android:id="@+id/txtSongTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btnForward"
+        android:layout_alignTop="@+id/sBar"
+        android:text="0:0" />
+</RelativeLayout>

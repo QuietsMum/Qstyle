@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginLeft="8dp"
+    android:layout_marginStart="8dp"
+    app:layout_goneMarginEnd="8dp"
+    android:layout_marginRight="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="10dp">
+            <ImageView
+                android:id="@+id/imageViewShop1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/nav_header_desc"
+                app:srcCompat="@drawable/lamoda"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="4dp"
+            app:layout_constraintStart_toEndOf="@+id/card1"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:cardCornerRadius="10dp">
+            <ImageView
+                android:id="@+id/imageViewShop2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/nav_header_desc"
+                app:srcCompat="@drawable/lamoda"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="4dp"
+            app:layout_constraintStart_toEndOf="@+id/card2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="10dp">
+            <ImageView
+                android:id="@+id/imageViewShop3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/nav_header_desc"
+                app:srcCompat="@drawable/lamoda"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card1"
+            app:cardCornerRadius="10dp">
+            <ImageView
+                android:id="@+id/imageViewShop4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/nav_header_desc"
+                app:srcCompat="@drawable/lamoda"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/card4"
+            app:layout_constraintTop_toBottomOf="@+id/card1"
+            app:cardCornerRadius="10dp">
+            <ImageView
+                android:id="@+id/imageViewShop5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/nav_header_desc"
+                app:srcCompat="@drawable/lamoda"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/card1"
+            app:layout_constraintStart_toEndOf="@+id/card5"
+            app:cardCornerRadius="10dp">
+            <ImageView
+                android:id="@+id/imageViewShop6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/nav_header_desc"
+                app:srcCompat="@drawable/lamoda"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="lamoda"/>
+        <TextView
+            android:id="@+id/tvText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:text="магазин одежды">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

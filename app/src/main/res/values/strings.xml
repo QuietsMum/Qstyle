@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Q-Style</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Q-Style</string>
+    <string name="nav_header_subtitle">asilbek.kurmangazy@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_shop">Q-shop</string>
+    <string name="menu_video">Q-video</string>
+    <string name="menu_music">Q-music</string>
+    <string name="menu_books">Q-books</string>
+    <string name="menu_food">Q-food</string>
+    <string name="ic_settings">Settings</string>
+    <string name="menu_send">Send</string>
+    <string name="image_back">image_back</string>
+</resources>
